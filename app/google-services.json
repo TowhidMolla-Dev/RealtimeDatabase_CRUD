@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "465083319576",
+    "project_id": "realtimedatabase-crud-4b8f1",
+    "storage_bucket": "realtimedatabase-crud-4b8f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465083319576:android:2b3e06078d1059a9bd4a6d",
+        "android_client_info": {
+          "package_name": "com.towhid.realtimedatabase_crud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB92jsS3IIyiiqa7HQBtT_Y8oIOJm0fvx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
