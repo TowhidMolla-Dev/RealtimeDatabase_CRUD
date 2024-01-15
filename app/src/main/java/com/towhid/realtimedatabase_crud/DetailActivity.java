@@ -42,7 +42,7 @@ public class DetailActivity extends AppCompatActivity {
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final DatabaseReference reference = FirebaseDatabase.getInstance().getReference("CRUD_Firebase");
+                final DatabaseReference reference = FirebaseDatabase.getInstance().getReference("PetShopDB_FireBase");
                 FirebaseStorage storage = FirebaseStorage.getInstance();
                 StorageReference storageReference = storage.getReferenceFromUrl(imageUrl);
                 storageReference.delete().addOnSuccessListener(new OnSuccessListener<Void>() {

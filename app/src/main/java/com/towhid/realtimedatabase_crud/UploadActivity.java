@@ -117,7 +117,7 @@ public class UploadActivity extends AppCompatActivity {
 
         String currentDate = DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
 
-        FirebaseDatabase.getInstance().getReference("CRUD_Firebase").child(title)
+        FirebaseDatabase.getInstance().getReference("PetShopDB_FireBase").child(title)
                 .setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {

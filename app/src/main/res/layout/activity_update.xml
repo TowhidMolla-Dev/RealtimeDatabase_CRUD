@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,77 +10,90 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_gravity="center_horizontal"
-            android:padding="20dp"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="20dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Update Data"
-                android:textSize="30sp"
                 android:textAlignment="center"
-                android:textColor="@color/lavender"/>
+                android:textColor="@color/green_ui"
+                android:textSize="30sp" />
 
             <ImageView
+                android:id="@+id/updateImage"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:src="@drawable/ic_update"
-                android:id="@+id/updateImage"
                 android:layout_marginLeft="60dp"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_update" />
 
             <EditText
+                android:id="@+id/updateTitle"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/updateTitle"
-                android:background="@drawable/border"
                 android:layout_marginTop="20dp"
-                android:padding="16dp"
-                android:hint="Enter topic name"
+                android:background="@drawable/border"
                 android:gravity="start|center_vertical"
-                android:textColor="@color/lavender"/>
+                android:hint="Enter pet name"
+                android:padding="16dp"
+                android:textColor="@color/green_ui" />
 
             <EditText
+                android:id="@+id/updateDesc"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:id="@+id/updateDesc"
-                android:background="@drawable/border"
                 android:layout_marginTop="20dp"
-                android:padding="16dp"
-                android:hint="Enter description"
+                android:background="@drawable/border"
                 android:gravity="start|center_vertical"
-                android:textColor="@color/lavender"/>
+                android:hint="Enter description"
+                android:padding="16dp"
+                android:textColor="@color/green_ui" />
 
             <EditText
+                android:id="@+id/updateLang"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/updateLang"
-                android:background="@drawable/border"
                 android:layout_marginTop="20dp"
-                android:padding="16dp"
-                android:hint="Enter language"
+                android:background="@drawable/border"
                 android:gravity="start|center_vertical"
-                android:textColor="@color/lavender"/>
+                android:hint="Enter cage no"
+                android:inputType="number"
+                android:padding="16dp"
+                android:textColor="@color/green_ui" />
+
+            <EditText
+                android:id="@+id/updateSellerName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter seller name"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/green_ui" />
 
             <Button
+                android:id="@+id/updateButton"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Update"
-                android:id="@+id/updateButton"
-                android:textSize="18sp"
                 android:layout_marginTop="20dp"
-                app:cornerRadius = "20dp"/>
+                android:text="Update"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
 
         </LinearLayout>
 

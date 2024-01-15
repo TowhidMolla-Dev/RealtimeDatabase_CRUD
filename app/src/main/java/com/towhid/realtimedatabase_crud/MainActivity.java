@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new MyAdapter(MainActivity.this, dataList);
         recyclerView.setAdapter(adapter);
 
-        databaseReference = FirebaseDatabase.getInstance().getReference("CRUD_Firebase");
+        databaseReference = FirebaseDatabase.getInstance().getReference("PetShopDB_FireBase");
         dialog.show();
         eventListener = databaseReference.addValueEventListener(new ValueEventListener() {
             @Override

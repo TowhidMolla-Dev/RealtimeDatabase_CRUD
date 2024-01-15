@@ -69,7 +69,7 @@ public class UpdateActivity extends AppCompatActivity {
             key = bundle.getString("Key");
             oldImageURL = bundle.getString("Image");
         }
-        databaseReference = FirebaseDatabase.getInstance().getReference("CRUD_Firebase").child(key);
+        databaseReference = FirebaseDatabase.getInstance().getReference("PetShopDB_FireBase").child(key);
         updateImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
