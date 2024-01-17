@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,7 +16,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 public class DetailActivity extends AppCompatActivity {
-    TextView detailDesc, detailTitle, detailLang;
+    ImageButton detailArrowBtn;
+    TextView detailType, detailTitle, detailLang;
     ImageView detailImage;
     FloatingActionButton deleteButton, editButton;
     String key = "";
@@ -24,15 +26,17 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        detailDesc = findViewById(R.id.detailDesc);
-        detailImage = findViewById(R.id.detailImage);
         detailTitle = findViewById(R.id.detailTitle);
+        detailType = findViewById(R.id.detailType);
+        detailLang = findViewById(R.id.detailLang);
+        detailImage = findViewById(R.id.detailImage);
         deleteButton = findViewById(R.id.deleteButton);
         editButton = findViewById(R.id.editButton);
-        detailLang = findViewById(R.id.detailLang);
+
+        detailArrowBtn = findViewById(R.id.detailArrowBtn);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null){
-            detailDesc.setText(bundle.getString("Description"));
+            detailType.setText(bundle.getString("Pet Type"));
             detailTitle.setText(bundle.getString("Title"));
             detailLang.setText(bundle.getString("Language"));
             key = bundle.getString("Key");
