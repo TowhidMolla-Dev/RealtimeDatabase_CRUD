@@ -17,7 +17,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 public class DetailActivity extends AppCompatActivity {
     ImageButton detailArrowBtn;
-    TextView detailType, detailTitle, detailLang;
+    TextView detailTitle, detailType, detailLang;
     ImageView detailImage;
     FloatingActionButton deleteButton, editButton;
     String key = "";
@@ -65,7 +65,7 @@ public class DetailActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(DetailActivity.this, UpdateActivity.class)
                         .putExtra("Title", detailTitle.getText().toString())
-                        .putExtra("Description", detailDesc.getText().toString())
+                        .putExtra("Description", detailType.getText().toString())
                         .putExtra("Language", detailLang.getText().toString())
                         .putExtra("Image", imageUrl)
                         .putExtra("Key", key);
